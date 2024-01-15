@@ -1,4 +1,11 @@
 ﻿using System;
 using Raylib_cs;
 
- new Game();
+ class Program
+{
+    static void Main()
+    {
+        Game game = new Game();
+        game.Run();
+    }
+}
