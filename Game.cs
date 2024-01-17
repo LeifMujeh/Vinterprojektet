@@ -15,7 +15,7 @@ public class Game
         const int screenWidth = 800;
         const int screenHeight = 600;
 
-        Raylib.InitWindow(screenWidth, screenHeight, "Map for plant v zombie");
+        Raylib.InitWindow(screenWidth, screenHeight, "Map for plant v zombie"); // Initialize the window after Raylib initialization
 
         while (!Raylib.WindowShouldClose())
         {
@@ -26,7 +26,6 @@ public class Game
 
             Raylib.EndDrawing();
         }
-
-        Raylib.CloseWindow();
     }
 }
+
