@@ -25,7 +25,22 @@ public class Map
         { 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0 }
     };
 
-    
+    //Texture2D floorTexture;
+    //Texture2D wallTexture;
+
+    public Map()
+    {
+        // Load textures after Raylib initialization
+        //  floorTexture = Raylib.LoadTexture("Resources/grass.png");
+        // wallTexture = Raylib.LoadTexture("Resources/Zombie1.png");
+        for (var i = 0; i < 100; i++)
+        {
+
+
+        }
+
+    }
+
     // Draws the map to the screen.
     public void Draw()
     {
