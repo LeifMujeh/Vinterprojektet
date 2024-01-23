@@ -20,7 +20,7 @@ public class Game
         while (!Raylib.WindowShouldClose())
         {
             Raylib.BeginDrawing();
-            Raylib.ClearBackground(Color.RAYWHITE);
+            Raylib.ClearBackground(Color.White);
 
             map.Draw();
 

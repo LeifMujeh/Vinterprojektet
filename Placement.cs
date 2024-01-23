@@ -1,6 +1,9 @@
 class platser
 {
     private int p1 = 2;
+    private Map myMap;
+
+    
 
     public int GetPlats()
     {
