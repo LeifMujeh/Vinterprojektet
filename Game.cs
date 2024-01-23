@@ -1,31 +1,46 @@
 using System;
+using System.Net.Mail;
 using Raylib_cs;
 
-public class Game
+//This class represents the main game logic.
+class Game
 {
+    private const int screenWidth = 800;
+    private const int screenHeight = 600;
+
     private Map map;
 
-    public Game()
+    //Initializes the game and starts the main game loop.
+    public static void Main() 
     {
-        this.map = new Map();
+
+        Raylib.InitWindow(screenWidth, screenHeight, "Map for plant v zombie");  // Initialize Raylib
+
+        Game game = new Game(); // Create a new game instance
+
+        game.Run(); // Run the game loop
+
+
+        Raylib.CloseWindow(); // Close the window and free resources
     }
 
+    
+    //Runs the main game loop. 
     public void Run()
     {
-        const int screenWidth = 800;
-        const int screenHeight = 600;
-
-        Raylib.InitWindow(screenWidth, screenHeight, "Map for plant v zombie"); // Initialize the window after Raylib initialization
-
         while (!Raylib.WindowShouldClose())
         {
-            Raylib.BeginDrawing();
-            Raylib.ClearBackground(Color.White);
+            // Update the game state
+            // ...
+            
+            Raylib.BeginDrawing(); // Begin the drawing process
 
-            map.Draw();
+            Raylib.ClearBackground(Color.White);  // Clear the background to white
 
-            Raylib.EndDrawing();
+            map.Draw(); // Draw the map
+
+            
+            Raylib.EndDrawing(); // End the drawing process
         }
     }
 }
-
